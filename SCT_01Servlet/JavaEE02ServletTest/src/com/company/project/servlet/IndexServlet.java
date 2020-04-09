@@ -29,7 +29,7 @@ public class IndexServlet extends HttpServlet {
           String  sex = request.getParameter("sex");
           String[] hobbys=request.getParameterValues("hobby");
 		  out.println("学号： "+studynum+"<br>");
-          out.println("密码："+name+"<br>");
+          out.println("姓名："+name+"<br>");
           out.print("生日："+birhtday+"<br>");
           out.print("性别："+sex+"<br>");
           for(String h:hobbys){
