@@ -17,4 +17,12 @@
     <servlet-name>firstServlet</servlet-name>
     <url-pattern>/firstServlet</url-pattern>
   </servlet-mapping>
+   <!-- <servlet>
+    <servlet-name>secondServlet</servlet-name>
+    <servlet-class>com.company.project.servlet.SecondServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>secondServlet</servlet-name>
+    <url-pattern>/secondServlet</url-pattern>
+  </servlet-mapping> -->
 </web-app>

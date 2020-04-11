@@ -1,6 +1,8 @@
 package com.company.project.servlet;
 import java.io.IOException;
 import java.io.PrintWriter;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -18,10 +20,10 @@ public class IndexServlet extends HttpServlet {
     }	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {		
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
-		 
-		  response.setContentType("text/html;charset=utf-8");
+		
 		  response.setCharacterEncoding("utf-8");
 		  request.setCharacterEncoding("utf-8");
+		  response.setContentType("text/html;charset=utf-8");
 		  PrintWriter out = response.getWriter();
           String studynum=request.getParameter("studynum");
           String name=request.getParameter("name");
@@ -32,11 +34,13 @@ public class IndexServlet extends HttpServlet {
           out.println("姓名："+name+"<br>");
           out.print("生日："+birhtday+"<br>");
           out.print("性别："+sex+"<br>");
+          out.print(" 体育爱好:");
           for(String h:hobbys){
-              out.println(" 体育爱好："+h+"<br>");
+              out.println(h+"<br>");
           }
-          //RequestDispatcher requestDispatcher = request.getRequestDispatcher("WEB-INF/pages/index.html");
-          //requestDispatcher.forward(request, response);
+          System.out.println("我是没跳转处理的！！！");
+      /*RequestDispatcher requestDispatcher = request.getRequestDispatcher("/secondServlet");
+       requestDispatcher.forward(request, response);*/
          out.close();
 		
 	}	
