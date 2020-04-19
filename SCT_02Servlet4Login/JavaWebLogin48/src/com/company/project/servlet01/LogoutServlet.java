@@ -1,7 +1,5 @@
 package com.company.project.servlet01;
 import java.io.IOException;
-import java.io.PrintWriter;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.Cookie;
@@ -20,7 +18,7 @@ public class LogoutServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		 response.setContentType("text/html;charset=utf-8");
-	        PrintWriter out = response.getWriter();
+	        //PrintWriter out = response.getWriter();
 
 	        Cookie cookie = new Cookie("songlu", "1718064048");
 	        cookie.setMaxAge(0);
