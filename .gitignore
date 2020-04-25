@@ -35,3 +35,7 @@ bin
 .project
 .settings
 SCT_01Servlet/JavaEE02ServletTest/src/com/company/project/controller/HelloController.java
+SCT_01Servlet/JavaEE02ServletTest/src/com/company/project/servlet/FirstServlet.java
+SCT_01Servlet/JavaEE02ServletTest/src/com/company/project/servlet/HelloServlet.java
+SCT_01Servlet/JavaEE02ServletTest/src/com/company/project/servlet/TestServlet.java
+SCT_01Servlet/JavaEE02ServletTest/WebContent/WEB-INF/pages/index.jsp
