@@ -6,8 +6,9 @@
 <meta charset="UTF-8">
 <title>登录</title>
 </head>
-<body>
+<body bgcolor="orange">
 <form action="login-servlet" method="post">
+     <h1>用户登陆系统</h1>
       用户名：<input type="text" name="username"><br>
       密码：&nbsp;&nbsp;&nbsp;
       <input type="password" name="password"><br>

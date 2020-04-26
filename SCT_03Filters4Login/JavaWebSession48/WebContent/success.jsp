@@ -8,7 +8,7 @@
 </head>
 <% String name=(String)session.getAttribute("user");
         if(name!=null){%>
-            <body>
+            <body bgcolor="orange">
                 <h1><%=request.getSession().getAttribute("user")%>欢迎您!</h1>
                 <h3>点击此处<a href="/JavaWebSession48/logout-servlet">【注销】</a></h3>
             </body>
