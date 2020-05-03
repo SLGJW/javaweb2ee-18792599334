@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>录入学生信息页面</title>
+<title>学生信息显示</title>
 </head>
 <body bgcolor="orange">
  <h1><b>学生信息如下所示</b></h1>
