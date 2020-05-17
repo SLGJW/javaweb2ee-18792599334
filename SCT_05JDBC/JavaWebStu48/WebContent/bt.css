@@ -1,0 +1,11 @@
+@charset "UTF-8";
+#bt1{
+	position:fixed;
+	left:380px;
+	top:50px
+}
+#bt2{
+	position:fixed;
+	left:450px;
+	top:50px;
+}
